@@ -767,18 +767,28 @@ h3,
 }
 
 .hero .hero-detail-cta {
-  min-height: 52px;
-  padding: 13px 24px;
-  font-size: var(--hero-cta-size, 15px);
-  background: rgba(255, 255, 255, 0.9);
-  border-color: #93C5FD;
-  color: #3458B8;
-  box-shadow: none;
+  min-height: 60px;
+  padding: 16px 30px;
+  font-size: var(--hero-cta-size, 17px);
+  font-weight: 800;
+  background: linear-gradient(135deg, #315CCB, #173D9C);
+  border: 2px solid #173D9C;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(23, 61, 156, 0.28);
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
 }
 
 .hero .hero-detail-cta:hover {
-  background: var(--white);
-  border-color: #5274B8;
+  background: linear-gradient(135deg, #244FB8, #102F80);
+  border-color: #102F80;
+  color: #fff;
+  box-shadow: 0 12px 24px rgba(23, 61, 156, 0.36);
+  transform: translateY(-2px);
+}
+
+.hero .hero-detail-cta:focus-visible {
+  outline: 4px solid rgba(49, 92, 203, 0.35);
+  outline-offset: 4px;
 }
 
 @media (max-width: 760px) {
@@ -3315,7 +3325,7 @@ footer {
   .mobile-home .hero-benefit-card.primary .hero-benefit-unit { font-size: 20px; }
   .mobile-home .hero-benefit-type,
   .mobile-home .hero-benefit-hint { overflow-wrap: anywhere; }
-  .mobile-home .hero .hero-detail-cta { padding: 13px 12px; color: #142D66; }
+  .mobile-home .hero .hero-detail-cta { padding: 16px 12px; color: #fff; }
 
   .mobile-home-summary,
   .mobile-home-programs,

@@ -57,9 +57,6 @@ export function Hero({ onConsult, onBranch, onDetail, benefitGroups = BENEFIT_GR
           </div>
 
           <div className="hero-actions">
-            <button className="btn-pill-dark hero-consult-cta" onClick={onConsult}>
-              상담 신청하기 ↗
-            </button>
             <button className="btn-pill-outline hero-detail-cta" onClick={onDetail}>
               {programLabel} 자세히 보기 →
             </button>
