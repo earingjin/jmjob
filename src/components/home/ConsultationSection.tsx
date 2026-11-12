@@ -29,7 +29,6 @@ export function ConsultationSection({ onBranch, onConsult, formUrl }: { onBranch
             <p className="contact-program-guide-note">세부 지원 요건과 신청 가능 여부는 상담 및 해당 사업의 공식 공고를 통해 확인해 주세요.</p>
           </div>
           <div className="contact-cta-stack">
-            <a className="btn-contact-submit" href={formUrl ?? '#'} onClick={event => { event.preventDefault(); onConsult(); }} target="_blank" rel="noopener noreferrer">상담 신청하기</a>
             <button className="btn-branch-directory" type="button" onClick={onBranch}>전국 지사 확인하기</button>
           </div>
         </div>
